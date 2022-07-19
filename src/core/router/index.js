@@ -38,5 +38,14 @@ export default new VueRouter({
         },
       ],
     },
+
+    {
+      path: "/404",
+      component: () => import("@/core/templates/NotFoundPage"),
+    },
+    {
+      path: "*",
+      redirect: "/404",
+    },
   ],
 });

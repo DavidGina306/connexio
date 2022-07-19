@@ -12,6 +12,7 @@ export default {
     stores: ["storage"],
     authRedirect: { path: "/" },
     tokenDefaultKey: "access_token",
+    notFoundRedirect: "/dashboard",
     loginData: {
       url: "login",
       method: "POST",
